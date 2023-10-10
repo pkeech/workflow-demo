@@ -1,10 +1,13 @@
 ## DEFINE NAME
-name: Demon Github Actions Workflow
+name: Demo Github Actions Workflow
 
 ## DEFINE EXECUTION POLICY
 on: 
   push:
     branches: [ 'main', 'dev' ]
+
+  ## ALLOW MANUAL DEPLOYMENT
+  workflow-dispatch:
 
 ## DEFINE ENVIRONMENT
 
