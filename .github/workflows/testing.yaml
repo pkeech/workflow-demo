@@ -7,7 +7,7 @@ on:
     branches: [ 'main', 'dev' ]
 
   ## ALLOW MANUAL DEPLOYMENT
-  workflow-dispatch:
+  workflow_dispatch:
 
 ## DEFINE ENVIRONMENT
 
