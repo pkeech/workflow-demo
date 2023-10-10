@@ -1,5 +1,5 @@
 ## DEFINE NAME
-name: Demonstration Github Actions Workflow
+name: Demon Github Actions Workflow
 
 ## DEFINE EXECUTION POLICY
 on: 
@@ -12,7 +12,7 @@ on:
 jobs:
 
   ## JOB: SOURCE CODE ANALYSIS
-  sca:
+  SourceCode:
 
     ## DEFINE RUNNER
     runs-on: ubuntu-latest
@@ -23,5 +23,5 @@ jobs:
     steps:
 
       ## STEP: EXAMPLE LINT
-      - name: "Linting"
+      - name: Linting
         run: echo This is a dummy Linting Step
