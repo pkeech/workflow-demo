@@ -4,14 +4,16 @@ name: Demonstration Github Actions Workflow
 ## DEFINE EXECUTION POLICY
 on: 
   push:
-    branches: [main]
+    branches: [ 'main', 'dev' ]
 
 ## DEFINE ENVIRONMENT
 
 ## DEFINE JOB(S)
 jobs:
+
   ## JOB: SOURCE CODE ANALYSIS
   sca:
+
     ## DEFINE RUNNER
     runs-on: ubuntu-latest
 
@@ -22,4 +24,4 @@ jobs:
 
       ## STEP: EXAMPLE LINT
       - name: "Linting"
-        run: echo "This is a dummy Linting Step"
+        run: echo This is a dummy Linting Step
