@@ -4,8 +4,7 @@ name: Demonstration Github Actions Workflow
 ## DEFINE EXECUTION POLICY
 on: 
   push:
-    branches:
-      - 'main'
+    branches: [main]
 
 ## DEFINE ENVIRONMENT
 
@@ -20,6 +19,7 @@ jobs:
 
     ## DEFINE STEPS
     steps:
+
       ## STEP: EXAMPLE LINT
       - name: "Linting"
         run: echo "This is a dummy Linting Step"
